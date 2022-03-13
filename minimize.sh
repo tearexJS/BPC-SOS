@@ -7,5 +7,5 @@ enabled=1
 gpgcheck=0
 type=rpm
 EOT
-dnf -y install xorg-x11-server-Xorg twm midori xinit zathura zathura-pdf-poppler
-echo "exec twm" > ~/.xinitrc
+dnf -y install xorg-x11-server-Xorg twm arora xinit mupdf
+echo "xterm & exec twm" > ~/.xinitrc
