@@ -9,3 +9,8 @@ type=rpm
 EOT
 dnf -y install xorg-x11-server-Xorg twm arora xinit mupdf
 echo "xterm & exec twm" > ~/.xinitrc
+
+rm -rf /usr/share/locale
+rm -rf /usr/man/
+rm -rf /usr/doc/
+rm -rf /usr/info/
