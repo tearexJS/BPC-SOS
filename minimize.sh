@@ -14,3 +14,5 @@ rm -rf /usr/share/locale
 rm -rf /usr/man/
 rm -rf /usr/doc/
 rm -rf /usr/info/
+rm -rf /usr/lib/firmware/
+rm -rf /var/log/
