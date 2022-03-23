@@ -14,6 +14,17 @@ rm -rf /usr/share/locale
 rm -rf /usr/man/
 rm -rf /usr/doc/
 rm -rf /usr/info/
+
+rm -rf /usr/share/qt4/
+rm -rf /usr/share/zoneinfo/
+rm -rf /usr/share/cracklib/
+rm -rf /usr/share/doc/
+rm -rf /usr/share/licenses/
+rm -rf /usr/share/iso-codes/
+rm -rf /usr/share/hwdata/
+rm -rf /usr/lib/firewalld/
+rm -rf/usr/lib64/python-3.9/
+
 rm -rf /usr/lib/firmware/
 rm -rf /var/cache/
 rm -rf /var/log/
