@@ -29,3 +29,4 @@ rm -rf /usr/lib64/liblvm2cmd.so.2.03
 rm -rf /usr/lib/firmware/
 rm -rf /var/cache/
 rm -rf /var/log/
+
