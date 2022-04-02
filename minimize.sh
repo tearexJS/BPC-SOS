@@ -28,5 +28,12 @@ rm -rf /usr/lib64/liblvm2cmd.so.2.03
 
 rm -rf /usr/lib/firmware/
 rm -rf /var/cache/
-rm -rf /var/log/
+find /var/log/ -not -name "Xorg.0.log" -delete
 
+FILE1=$HOME/all_modules.txt
+FILE2=$HOME/current_modules.txt
+find /lib/modules/"$(uname -r)" -type f -name '*.ko*' > "$FILE1"
+lsmod | cut -f1 -d " " | tail -n +2 | xargs -I {} modinfo {} -n > "$FILE2"
+sort "$FILE1" | uniq > file1.sorted
+sort "$FILE2" | uniq > file2.sorted
+comm -23 file1.sorted file2.sorted | xargs -I {} rm -fv {}
