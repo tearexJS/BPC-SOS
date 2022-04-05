@@ -28,7 +28,8 @@ rm -rf /usr/lib64/liblvm2cmd.so.2.03
 
 rm -rf /usr/lib/firmware/
 rm -rf /var/cache/
-find /var/log/ -not -name "Xorg.0.log" -delete
+find /var/log/ -type f -not -name "Xorg.0.log" -delete
+mkdir /var/log
 
 FILE1=$HOME/all_modules.txt
 FILE2=$HOME/current_modules.txt
