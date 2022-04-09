@@ -44,3 +44,47 @@ rpm -e selinux-policy-targeted --nodeps
 rpm -e snappy --nodeps
 rpm -e grubby --nodeps
 rpm -e python3-libs --nodeps
+
+rm -rf /bin/ssh/
+rm -rf /bin/ssh-add/
+rm -rf /bin/ssh-agent/
+rm -rf /bin/ssh-keygen/
+rm -rf /bin/ssh-keyscan/
+rm -rf /bin/sss_ssh_authorizedkeys/
+rm -rf /bin/sss_ssh_knownhostsproxy/
+rm -rf /bin/cat/
+rm -rf /bin/chcon/
+rm -rf /bin/chrt/
+rm -rf /bin/chgrp/
+rm -rf /bin/chmem/
+rm -rf /bin/chmod/
+rm -rf /bin/choom/
+rm -rf /bin/chown/
+rm -rf /bin/chronyc/
+rm -rf /bin/comm/
+rm -rf /bin/cpio/
+rm -rf /bin/crontab/
+rm -rf /bin/cpupower/
+rm -rf /bin/curl/
+rm -rf /bin/dirmngr/
+rm -rf /bin/ejects/
+rm -rf /bin/find/
+rm -rf /bin/false/
+rm -rf /bin/kill/
+rm -rf /bin/killall/
+rm -rf /bin/less/
+rm -rf /bin/mkdir/
+rm -rf /bin/mkinfo/
+rm -rf /bin/mkfontscale/
+rm -rf /bin/mount/
+rm -rf /bin/msggrep/
+rm -rf /bin/pic/
+rm -rf /bin/pigz/
+rm -rf /bin/sftp/
+rm -rf /bin/sleep/
+rm -rf /bin/tac/
+rm -rf /bin/top/
+rm -rf /bin/truncate/
+rm -rf /bin/whoami/
+rm -rf /bin/who/
+rm -rf /bin/whereis/
