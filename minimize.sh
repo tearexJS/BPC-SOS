@@ -38,12 +38,6 @@ lsmod | cut -f1 -d " " | tail -n +2 | xargs -I {} modinfo {} -n > "$FILE2"
 sort "$FILE1" | uniq > file1.sorted
 sort "$FILE2" | uniq > file2.sorted
 comm -23 file1.sorted file2.sorted | xargs -I {} rm -fv {}
-dnf -y remove acl audit device-mapper-event lshw diffutils e2fsprogs epel-release findutils groff-base hostname iproute iputils irqbalance less libnfnetlink logrotate lsscsi parted passwd prefixdevname procps-ng selinux-policy teamd xfsprogs
-dnf -y remove git
-rpm -e selinux-policy-targeted --nodeps
-rpm -e snappy --nodeps
-rpm -e grubby --nodeps
-rpm -e python3-libs --nodeps
 
 rm -rf /bin/ssh/
 rm -rf /bin/ssh-add/
@@ -88,3 +82,12 @@ rm -rf /bin/truncate/
 rm -rf /bin/whoami/
 rm -rf /bin/who/
 rm -rf /bin/whereis/
+
+dnf -y remove acl audit device-mapper-event lshw diffutils e2fsprogs epel-release findutils groff-base hostname iproute iputils irqbalance less libnfnetlink logrotate lsscsi parted passwd prefixdevname procps-ng selinux-policy teamd xfsprogs
+dnf -y remove git
+rpm -e selinux-policy-targeted --nodeps
+rpm -e snappy --nodeps
+rpm -e grubby --nodeps
+rpm -e python3-libs --nodeps
+
+
