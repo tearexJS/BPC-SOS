@@ -10,6 +10,8 @@ EOT
 dnf -y install xorg-x11-server-Xorg twm arora xinit mupdf
 echo "xterm & exec twm" > ~/.xinitrc
 
+dnf -y remove git
+
 rm -rf /usr/share/locale
 rm -rf /usr/man/
 rm -rf /usr/doc/
@@ -84,7 +86,7 @@ rm -rf /bin/who
 rm -rf /bin/whereis
 
 dnf -y remove acl audit device-mapper-event lshw diffutils e2fsprogs epel-release findutils groff-base hostname iproute iputils irqbalance less libnfnetlink logrotate lsscsi parted passwd prefixdevname procps-ng selinux-policy teamd xfsprogs
-dnf -y remove git
+
 rpm -e selinux-policy-targeted --nodeps
 rpm -e snappy --nodeps
 rpm -e grubby --nodeps
