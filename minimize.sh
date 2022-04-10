@@ -72,7 +72,6 @@ rm -rf /bin/less
 rm -rf /bin/mkdir
 rm -rf /bin/mkinfo
 rm -rf /bin/mkfontscale
-rm -rf /bin/mount
 rm -rf /bin/msggrep
 rm -rf /bin/pic
 rm -rf /bin/pigz
