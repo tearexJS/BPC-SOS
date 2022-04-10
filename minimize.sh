@@ -105,6 +105,14 @@ rpm -e libyaml --nodeps
 rpm -e yum
 rpm -e dnf
 rpm -e hwdata --nodeps
+rpm -e python3-dnf --nodeps
+rpm -e python3-gpg
+rpm -e iwl7260-firmware
+rpm -e python3-libdnf --nodeps
+rpm -e libdnf --nodeps
+rpm -e gettext-libs
+rpm -e python3-dnf-plugins-core --nodeps
+
 
 
 
