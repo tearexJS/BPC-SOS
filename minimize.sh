@@ -90,5 +90,14 @@ rpm -e selinux-policy-targeted --nodeps
 rpm -e snappy --nodeps
 rpm -e grubby --nodeps
 rpm -e python3-libs --nodeps
+rpm -e libssh --nodeps
+rpm -e curl --nodeps
+rpm -e curl-7.76.1-14.el9.x86_64 --nodeps
+rpm -e python3-six --nodeps
+rpm -e gdbm-libs --nodeps
+rpm -e gettext --nodeps
+rpm -e sssd-common --nodeps
+rpm -e dejavu-sans-fonts --nodeps
+
 
 
