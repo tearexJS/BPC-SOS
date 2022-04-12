@@ -112,7 +112,3 @@ rpm -e python3-libdnf --nodeps
 rpm -e libdnf --nodeps
 rpm -e gettext-libs
 rpm -e python3-dnf-plugins-core --nodeps
-
-
-
-
